@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Playstation 5",
+    "description": "Latest console from brand Playstation, capacity of run games in 120fps or 4k 60fps",
+    "price": 300000,
+    "status": true,
+    "thumbnails": [
+      "https://static.wikia.nocookie.net/playstation5617/images/3/30/PlayStation_5.png/revision/latest?cb=20210107190013&path-prefix=es",
+      "https://mtelectro.com.ar/wp-content/uploads/2021/05/playstation-5-side.png",
+      "https://gmedia.playstation.com/is/image/SIEPDC/Controller-XL@2x?fmt=png-alpha&scl=1"
+    ],
+    "code": "P5",
+    "stock": 20,
+    "category": "consoles",
+    "id": 1
+  },
+  {
+    "title": "Xbox X",
+    "description": "Latest console from brand Xbox, capacity of run games in 120fps or 4k 60fps",
+    "thumbnails": [
+      "https://assets.xboxservices.com/assets/c7/46/c7465321-acbb-4e4f-9376-cd6005165d0e.png?n=GLP-2020_Feature-1400_XSX_935x1166_03.png",
+      "https://e7.pngegg.com/pngimages/903/989/png-clipart-xbox-one-x-video-game-consoles-overwatch-xbox-angle-electronics.png",
+      "https://dlb99j1rm9bvr.cloudfront.net/xbox-series-x-controller/parts/angle-1/model/size-1000/bg.png"
+    ],
+    "price": 250000,
+    "code": "XX",
+    "stock": 20,
+    "category": "consoles",
+    "status": true,
+    "id": 2
+  },
+  {
+    "title": "Samsung Smart TV 8k",
+    "description": "The new generation of QLED, in 8K Mini LED up to 40 times more small, Image of 8K impulsed from IA completly for 16 neurnal networks & 75''",
+    "category": "tv",
+    "thumbnails": [
+      "https://images.samsung.com/is/image/samsung/p6pim/ar/qn75qn800agczb/gallery/ar-neo-qled-8k-qn800a-qn75qn800agczb-489508642?$365_292_PNG$",
+      "https://images.samsung.com/is/image/samsung/p6pim/ar/qn75qn800agczb/gallery/ar-neo-qled-8k-qn800a-qn75qn800agczb-489508621?$684_547_PNG$",
+      "https://images.samsung.com/is/image/samsung/p6pim/ar/qn75qn800agczb/gallery/ar-neo-qled-8k-qn800a-qn75qn800agczb-489508622?$684_547_PNG$"
+    ],
+    "price": 1300000,
+    "code": "QN800A",
+    "stock": 20,
+    "status": true,
+    "id": 3
+  }
+]

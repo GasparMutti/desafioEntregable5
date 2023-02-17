@@ -1,0 +1,30 @@
+<main>
+    {{#if isLogin}}
+    <h2 style="text-align: center; margin-top: 20px; font-size: 14px;">
+      ¡Bienvenido {{user.firstName}} {{user.lastName}}!
+    </h2>
+  {{/if}}
+  <section class="productsTitlePage">
+    <h1>Products</h1>
+  </section>
+  <section class="productsContainer">
+    {{#each payload}}
+      <article class="productCard">
+        <img class="productImg" src="{{this.thumbnails}}" />
+        <h3 class="productCategory">{{this.category}}</h3>
+        <h3 class="productTitle">{{this.title}}</h3>
+        <section class="cardSection">
+          <h3 class="productPrice">${{this.price}}</h3>
+          <button class="productButton" onclick={addToCart("{{this._id}}")}>Add to cart 🛒</button>
+        </section>
+      </article>
+    {{/each}}
+  </section>
+</main>
+<section class="productsPaginate">
+  <a href="{{prevLink}}" class="paginateLeftArrow">←</a>
+  <div class="paginateIndexContainer">
+    {{resPage}}
+  </div>
+  <a href="{{nextLink}}" class="paginateRightArrow">→</a>
+</section>

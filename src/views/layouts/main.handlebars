@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <title>PracticaIntegradora</title>
+  </head>
+  <body>
+    <header>
+  <nav>
+    <ul>
+      <li style="display: inline">
+        <span class="headerLogo">G</span>
+      </li>
+      <li class="linkContainer">
+        <a class="navLink" href="/">Home</a>
+      </li>
+      <li class="linkContainer">
+        <a class="navLink" href="/products">Catalog</a>
+      </li>
+      <li class="linkContainer">
+        <a class="navLink" href="/chat">Chat</a>
+      </li>
+    </ul>
+    <ul>
+      <li class="cartLinkContainer">
+        <a class="cartLink" href="/carts/63e9bda4f8b1b3b6dfec4229">🛒</a>
+      </li>
+      {{#if isLogin}}
+      <li class="cartLinkContainer">
+        <a class="cartLink" href="/profile">🧑</a>
+      </li>
+      {{else}}
+      <li class="linkContainer">
+        <a class="navLink" href="/register">Register</a>
+      </li>
+      <li class="linkContainer">
+        <a class="navLink" href="/login">Login</a>
+      </li>
+      {{/if}}
+      {{#if isLogin}}
+      <li class="linkContainer">
+        <button style="background: none; color: #ffff; border:none; cursor: pointer; font-weight:600;" onclick={logout()}>Logout<button/>
+      </li>
+      {{/if}}
+    </ul>
+  </nav>
+</header>
+    {{{body}}}
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/index.js"></script>
+  </body>
+  <footer>Proyecto Ecommerce Backend CoderHouse 2023 - Gaspar Mutti</footer>
+</html>

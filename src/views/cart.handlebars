@@ -1,0 +1,22 @@
+<div class="cartTitlePage">
+  <h1>Cart</h1>
+</div>
+
+<div class="cartProductsContainer">
+  {{#each cart}}
+    <div class="cartProduct">
+      <div class="cartSection">
+        <img
+          class="cartProductImg"
+          src="{{pid.thumbnails}}"
+          alt="{{pid.title}}"
+        />
+        <h2 class="cartProductTitle">Name: {{pid.title}}</h2>
+      </div>
+      <div class="cartSection">
+        <h2 class="cartProductPrice">Price: ${{pid.price}}</h2>
+        <h2 class="cartProductQuantity">Quantity: {{quantity}}</h2>
+      </div>
+    </div>
+  {{/each}}
+</div>
